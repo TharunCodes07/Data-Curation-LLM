@@ -1,0 +1,41 @@
+scraping:
+  max_pages_per_site: 100
+  request_delay: 1
+  timeout: 30
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  headers:
+    Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+    Accept-Language: "en-US,en;q=0.5"
+    Accept-Encoding: "gzip, deflate"
+    Connection: "keep-alive"
+
+grammar:
+  cfg_rules_path: "./data/cfg_rules.json"
+  chunk_size: 500
+  context_window: 100
+  min_sentence_length: 10
+  max_sentence_length: 1000
+
+llm:
+  gemini:
+    model: "gemini-2.5-flash"
+    temperature: 0.3
+    max_tokens: 1000
+    top_p: 0.9
+    top_k: 40
+
+rag:
+  embedding_model: "all-MiniLM-L6-v2"
+  chunk_size: 1000
+  chunk_overlap: 200
+  top_k_results: 5
+  similarity_threshold: 0.7
+
+database:
+  chroma_db_path: "./data/chroma_db"
+  collection_name: "curated_documents"
+
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} - {message}"
+  log_file: "./logs/app.log"

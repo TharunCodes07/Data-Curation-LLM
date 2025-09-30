@@ -1,0 +1,50 @@
+# Core web scraping and HTTP
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+selenium>=4.15.0
+lxml>=4.9.3
+
+# LangChain ecosystem
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-core>=0.1.0
+langchain-google-genai>=1.0.0
+langchain-chroma>=0.1.0
+
+# Google Gemini API
+google-generativeai>=0.3.0
+
+# Vector database and embeddings
+chromadb>=0.4.18
+sentence-transformers>=2.2.2
+
+# Natural Language Processing
+nltk>=3.8.1
+spacy>=3.7.0
+textstat>=0.7.3
+
+# Context-Free Grammar parsing
+pyparsing>=3.1.1
+antlr4-python3-runtime>=4.13.1
+
+# Data processing and utilities
+pandas>=2.1.0
+numpy>=1.24.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+
+# CLI and progress tracking
+click>=8.1.7
+tqdm>=4.66.0
+rich>=13.7.0
+
+# Configuration management
+pyyaml>=6.0.1
+configparser>=6.0.0
+
+# Logging and monitoring
+loguru>=0.7.2
+
+# Testing (optional)
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
